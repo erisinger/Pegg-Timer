@@ -31,7 +31,7 @@ static void display_time(){
 	char rem[64];
 	int minutes = remaining  / 1000 / 60;
 	int seconds = (remaining - minutes * 1000 * 60) / 1000;
-	snprintf(rem, 64, "%02d: %02d", minutes, seconds);
+	snprintf(rem, 64, "%02d:%02d", minutes, seconds);
 	text_layer_set_text(text_layer, rem);
 }
 
@@ -68,7 +68,7 @@ static void add_time(int delta_milliseconds){
 static void timer_complete(){
 	//buzz, display, the whole nine
 	running = false;
-	text_layer_set_text(text_layer, "Time up!");
+	text_layer_set_text(text_layer, "00:00");
 	vibrate();
 	display_time();
 }
@@ -91,8 +91,9 @@ static void select_click_handler(ClickRecognizerRef recognizer, void *context) {
 }
 
 static void up_click_handler(ClickRecognizerRef recognizer, void *context) {
-	add_time(1000 * 60);
-	
+	if (remaining < 99 * 60 * 1000 + 59 * 1000) {
+		add_time(1000 * 60);
+	}
 	display_time();
 }
 
@@ -114,10 +115,10 @@ static void window_load(Window *window) {
   Layer *window_layer = window_get_root_layer(window);
   GRect bounds = layer_get_bounds(window_layer);
 
-  text_layer = text_layer_create((GRect) { .origin = { 0, 72 }, .size = { bounds.size.w, bounds.size.h } });
-  text_layer_set_text(text_layer, "00: 00");
+  text_layer = text_layer_create((GRect) { .origin = { 0, 52 }, .size = { bounds.size.w, bounds.size.h } });
+  text_layer_set_text(text_layer, "00:00");
   text_layer_set_text_alignment(text_layer, GTextAlignmentCenter);
-  text_layer_set_font(text_layer, fonts_get_system_font(FONT_KEY_BITHAM_30_BLACK));
+  text_layer_set_font(text_layer, fonts_get_system_font(FONT_KEY_BITHAM_42_BOLD));
   layer_add_child(window_layer, text_layer_get_layer(text_layer));
 }
 
