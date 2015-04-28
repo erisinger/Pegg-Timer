@@ -555,8 +555,6 @@ Discarded input sections
                 0x0000000000000000        0xc /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/Pebble/lib/libpebble.a(tmpycZPtxpebble.o)
  .text.window_set_click_context
                 0x0000000000000000        0xc /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/Pebble/lib/libpebble.a(tmpycZPtxpebble.o)
- .text.window_single_repeating_click_subscribe
-                0x0000000000000000        0xc /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/Pebble/lib/libpebble.a(tmpycZPtxpebble.o)
  .text.graphics_draw_text
                 0x0000000000000000        0xc /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/Pebble/lib/libpebble.a(tmpycZPtxpebble.o)
  .text.dict_serialize_tuplets_to_buffer
@@ -700,7 +698,7 @@ LOAD /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/arm-cs-tools/bin/../lib/gcc/ar
  .pbl_header    0x0000000000000000       0x82 appinfo.auto.c.7.o
                 0x0000000000000000                __pbl_app_info
 
-.text           0x0000000000000084      0x43d
+.text           0x0000000000000084      0x44d
  *(.text)
  .text          0x0000000000000084       0x14 /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/Pebble/lib/libpebble.a(tmpycZPtxpebble.o)
  *(.text.*)
@@ -713,134 +711,137 @@ LOAD /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/arm-cs-tools/bin/../lib/gcc/ar
  .text.window_load
                 0x0000000000000118       0x80 src/Pegg-Timer.c.7.o
  .text.click_config_provider
-                0x0000000000000198       0x30 src/Pegg-Timer.c.7.o
+                0x0000000000000198       0x34 src/Pegg-Timer.c.7.o
  .text.set_timer
-                0x00000000000001c8       0x2c src/Pegg-Timer.c.7.o
+                0x00000000000001cc       0x2c src/Pegg-Timer.c.7.o
  .text.select_click_handler
-                0x00000000000001f4       0x14 src/Pegg-Timer.c.7.o
+                0x00000000000001f8       0x14 src/Pegg-Timer.c.7.o
  .text.timer_handler
-                0x0000000000000208       0x74 src/Pegg-Timer.c.7.o
+                0x000000000000020c       0x74 src/Pegg-Timer.c.7.o
  .text.down_click_handler
-                0x000000000000027c       0x20 src/Pegg-Timer.c.7.o
+                0x0000000000000280       0x20 src/Pegg-Timer.c.7.o
  .text.startup.main
-                0x000000000000029c       0x84 src/Pegg-Timer.c.7.o
-                0x000000000000029c                main
+                0x00000000000002a0       0x84 src/Pegg-Timer.c.7.o
+                0x00000000000002a0                main
  .text.app_event_loop
-                0x0000000000000320        0xc /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/Pebble/lib/libpebble.a(tmpycZPtxpebble.o)
-                0x0000000000000320                app_event_loop
- .text.app_log  0x000000000000032c        0xc /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/Pebble/lib/libpebble.a(tmpycZPtxpebble.o)
-                0x000000000000032c                app_log
+                0x0000000000000324        0xc /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/Pebble/lib/libpebble.a(tmpycZPtxpebble.o)
+                0x0000000000000324                app_event_loop
+ .text.app_log  0x0000000000000330        0xc /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/Pebble/lib/libpebble.a(tmpycZPtxpebble.o)
+                0x0000000000000330                app_log
  .text.app_timer_register
-                0x0000000000000338        0xc /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/Pebble/lib/libpebble.a(tmpycZPtxpebble.o)
-                0x0000000000000338                app_timer_register
+                0x000000000000033c        0xc /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/Pebble/lib/libpebble.a(tmpycZPtxpebble.o)
+                0x000000000000033c                app_timer_register
  .text.fonts_get_system_font
-                0x0000000000000344        0xc /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/Pebble/lib/libpebble.a(tmpycZPtxpebble.o)
-                0x0000000000000344                fonts_get_system_font
+                0x0000000000000348        0xc /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/Pebble/lib/libpebble.a(tmpycZPtxpebble.o)
+                0x0000000000000348                fonts_get_system_font
  .text.layer_add_child
-                0x0000000000000350        0xc /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/Pebble/lib/libpebble.a(tmpycZPtxpebble.o)
-                0x0000000000000350                layer_add_child
+                0x0000000000000354        0xc /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/Pebble/lib/libpebble.a(tmpycZPtxpebble.o)
+                0x0000000000000354                layer_add_child
  .text.layer_get_bounds
-                0x000000000000035c        0xc /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/Pebble/lib/libpebble.a(tmpycZPtxpebble.o)
-                0x000000000000035c                layer_get_bounds
- .text.memset   0x0000000000000368        0xc /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/Pebble/lib/libpebble.a(tmpycZPtxpebble.o)
-                0x0000000000000368                memset
+                0x0000000000000360        0xc /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/Pebble/lib/libpebble.a(tmpycZPtxpebble.o)
+                0x0000000000000360                layer_get_bounds
+ .text.memset   0x000000000000036c        0xc /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/Pebble/lib/libpebble.a(tmpycZPtxpebble.o)
+                0x000000000000036c                memset
  .text.snprintf
-                0x0000000000000374        0xc /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/Pebble/lib/libpebble.a(tmpycZPtxpebble.o)
-                0x0000000000000374                snprintf
+                0x0000000000000378        0xc /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/Pebble/lib/libpebble.a(tmpycZPtxpebble.o)
+                0x0000000000000378                snprintf
  .text.text_layer_create
-                0x0000000000000380        0xc /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/Pebble/lib/libpebble.a(tmpycZPtxpebble.o)
-                0x0000000000000380                text_layer_create
+                0x0000000000000384        0xc /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/Pebble/lib/libpebble.a(tmpycZPtxpebble.o)
+                0x0000000000000384                text_layer_create
  .text.text_layer_destroy
-                0x000000000000038c        0xc /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/Pebble/lib/libpebble.a(tmpycZPtxpebble.o)
-                0x000000000000038c                text_layer_destroy
+                0x0000000000000390        0xc /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/Pebble/lib/libpebble.a(tmpycZPtxpebble.o)
+                0x0000000000000390                text_layer_destroy
  .text.text_layer_get_layer
-                0x0000000000000398        0xc /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/Pebble/lib/libpebble.a(tmpycZPtxpebble.o)
-                0x0000000000000398                text_layer_get_layer
+                0x000000000000039c        0xc /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/Pebble/lib/libpebble.a(tmpycZPtxpebble.o)
+                0x000000000000039c                text_layer_get_layer
  .text.text_layer_set_font
-                0x00000000000003a4        0xc /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/Pebble/lib/libpebble.a(tmpycZPtxpebble.o)
-                0x00000000000003a4                text_layer_set_font
+                0x00000000000003a8        0xc /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/Pebble/lib/libpebble.a(tmpycZPtxpebble.o)
+                0x00000000000003a8                text_layer_set_font
  .text.text_layer_set_text
-                0x00000000000003b0        0xc /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/Pebble/lib/libpebble.a(tmpycZPtxpebble.o)
-                0x00000000000003b0                text_layer_set_text
+                0x00000000000003b4        0xc /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/Pebble/lib/libpebble.a(tmpycZPtxpebble.o)
+                0x00000000000003b4                text_layer_set_text
  .text.text_layer_set_text_alignment
-                0x00000000000003bc        0xc /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/Pebble/lib/libpebble.a(tmpycZPtxpebble.o)
-                0x00000000000003bc                text_layer_set_text_alignment
+                0x00000000000003c0        0xc /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/Pebble/lib/libpebble.a(tmpycZPtxpebble.o)
+                0x00000000000003c0                text_layer_set_text_alignment
  .text.vibes_enqueue_custom_pattern
-                0x00000000000003c8        0xc /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/Pebble/lib/libpebble.a(tmpycZPtxpebble.o)
-                0x00000000000003c8                vibes_enqueue_custom_pattern
+                0x00000000000003cc        0xc /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/Pebble/lib/libpebble.a(tmpycZPtxpebble.o)
+                0x00000000000003cc                vibes_enqueue_custom_pattern
  .text.window_create
-                0x00000000000003d4        0xc /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/Pebble/lib/libpebble.a(tmpycZPtxpebble.o)
-                0x00000000000003d4                window_create
+                0x00000000000003d8        0xc /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/Pebble/lib/libpebble.a(tmpycZPtxpebble.o)
+                0x00000000000003d8                window_create
  .text.window_destroy
-                0x00000000000003e0        0xc /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/Pebble/lib/libpebble.a(tmpycZPtxpebble.o)
-                0x00000000000003e0                window_destroy
+                0x00000000000003e4        0xc /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/Pebble/lib/libpebble.a(tmpycZPtxpebble.o)
+                0x00000000000003e4                window_destroy
  .text.window_get_root_layer
-                0x00000000000003ec        0xc /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/Pebble/lib/libpebble.a(tmpycZPtxpebble.o)
-                0x00000000000003ec                window_get_root_layer
+                0x00000000000003f0        0xc /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/Pebble/lib/libpebble.a(tmpycZPtxpebble.o)
+                0x00000000000003f0                window_get_root_layer
  .text.window_set_click_config_provider
-                0x00000000000003f8        0xc /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/Pebble/lib/libpebble.a(tmpycZPtxpebble.o)
-                0x00000000000003f8                window_set_click_config_provider
+                0x00000000000003fc        0xc /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/Pebble/lib/libpebble.a(tmpycZPtxpebble.o)
+                0x00000000000003fc                window_set_click_config_provider
  .text.window_set_window_handlers
-                0x0000000000000404        0xc /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/Pebble/lib/libpebble.a(tmpycZPtxpebble.o)
-                0x0000000000000404                window_set_window_handlers
+                0x0000000000000408        0xc /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/Pebble/lib/libpebble.a(tmpycZPtxpebble.o)
+                0x0000000000000408                window_set_window_handlers
  .text.window_stack_push
-                0x0000000000000410        0xc /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/Pebble/lib/libpebble.a(tmpycZPtxpebble.o)
-                0x0000000000000410                window_stack_push
+                0x0000000000000414        0xc /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/Pebble/lib/libpebble.a(tmpycZPtxpebble.o)
+                0x0000000000000414                window_stack_push
  .text.window_single_click_subscribe
-                0x000000000000041c        0xc /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/Pebble/lib/libpebble.a(tmpycZPtxpebble.o)
-                0x000000000000041c                window_single_click_subscribe
+                0x0000000000000420        0xc /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/Pebble/lib/libpebble.a(tmpycZPtxpebble.o)
+                0x0000000000000420                window_single_click_subscribe
+ .text.window_single_repeating_click_subscribe
+                0x000000000000042c        0xc /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/Pebble/lib/libpebble.a(tmpycZPtxpebble.o)
+                0x000000000000042c                window_single_repeating_click_subscribe
  *(.rodata)
  *(.rodata*)
  .rodata.segments.6680
-                0x0000000000000428       0x3c src/Pegg-Timer.c.7.o
+                0x0000000000000438       0x3c src/Pegg-Timer.c.7.o
  .rodata.str1.1
-                0x0000000000000464       0x5d src/Pegg-Timer.c.7.o
+                0x0000000000000474       0x5d src/Pegg-Timer.c.7.o
 
-.glue_7         0x00000000000004c4        0x0
+.glue_7         0x00000000000004d4        0x0
  .glue_7        0x0000000000000000        0x0 linker stubs
 
-.glue_7t        0x00000000000004c4        0x0
+.glue_7t        0x00000000000004d4        0x0
  .glue_7t       0x0000000000000000        0x0 linker stubs
 
-.vfp11_veneer   0x00000000000004c4        0x0
+.vfp11_veneer   0x00000000000004d4        0x0
  .vfp11_veneer  0x0000000000000000        0x0 linker stubs
 
-.v4_bx          0x00000000000004c4        0x0
+.v4_bx          0x00000000000004d4        0x0
  .v4_bx         0x0000000000000000        0x0 linker stubs
 
-.iplt           0x00000000000004c4        0x0
+.iplt           0x00000000000004d4        0x0
  .iplt          0x0000000000000000        0x0 /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtbegin.o
 
-.rel.dyn        0x00000000000004c4        0x0
+.rel.dyn        0x00000000000004d4        0x0
  .rel.iplt      0x0000000000000000        0x0 /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtbegin.o
 
-.data           0x00000000000004c4        0xc
+.data           0x00000000000004d4        0xc
  *(.data)
- .data          0x00000000000004c4        0x0 /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crti.o
- .data          0x00000000000004c4        0x4 /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtbegin.o
-                0x00000000000004c4                __dso_handle
- .data          0x00000000000004c8        0x8 src/Pegg-Timer.c.7.o
- .data          0x00000000000004d0        0x0 appinfo.auto.c.7.o
- .data          0x00000000000004d0        0x0 /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/Pebble/lib/libpebble.a(tmpycZPtxpebble.o)
- .data          0x00000000000004d0        0x0 /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtend.o
- .data          0x00000000000004d0        0x0 /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtn.o
+ .data          0x00000000000004d4        0x0 /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crti.o
+ .data          0x00000000000004d4        0x4 /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtbegin.o
+                0x00000000000004d4                __dso_handle
+ .data          0x00000000000004d8        0x8 src/Pegg-Timer.c.7.o
+ .data          0x00000000000004e0        0x0 appinfo.auto.c.7.o
+ .data          0x00000000000004e0        0x0 /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/Pebble/lib/libpebble.a(tmpycZPtxpebble.o)
+ .data          0x00000000000004e0        0x0 /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtend.o
+ .data          0x00000000000004e0        0x0 /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtn.o
  *(.data.*)
 
-.igot.plt       0x00000000000004d0        0x0
+.igot.plt       0x00000000000004e0        0x0
  .igot.plt      0x0000000000000000        0x0 /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtbegin.o
 
-.bss            0x00000000000004d0       0x14
+.bss            0x00000000000004e0       0x14
  *(.bss)
  *(.bss.*)
  .bss.text_layer
-                0x00000000000004d0        0x4 src/Pegg-Timer.c.7.o
+                0x00000000000004e0        0x4 src/Pegg-Timer.c.7.o
  .bss.remaining
-                0x00000000000004d4        0x4 src/Pegg-Timer.c.7.o
- .bss.running   0x00000000000004d8        0x1 src/Pegg-Timer.c.7.o
-                0x00000000000004d8                running
- *fill*         0x00000000000004d9        0x3 
- .bss.timer     0x00000000000004dc        0x4 src/Pegg-Timer.c.7.o
- .bss.window    0x00000000000004e0        0x4 src/Pegg-Timer.c.7.o
+                0x00000000000004e4        0x4 src/Pegg-Timer.c.7.o
+ .bss.running   0x00000000000004e8        0x1 src/Pegg-Timer.c.7.o
+                0x00000000000004e8                running
+ *fill*         0x00000000000004e9        0x3 
+ .bss.timer     0x00000000000004ec        0x4 src/Pegg-Timer.c.7.o
+ .bss.window    0x00000000000004f0        0x4 src/Pegg-Timer.c.7.o
 
 DISCARD
  libc.a(*)
@@ -873,9 +874,9 @@ OUTPUT(/Users/erikrisinger/Dropbox/Coding/Pebble/Pegg-Timer/build/pebble-app.elf
  .comment       0x0000000000000000       0x4f appinfo.auto.c.7.o
  .comment       0x0000000000000000       0x4f /Users/erikrisinger/pebble-dev/PebbleSDK-2.9/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtend.o
 
-.debug_info     0x0000000000000000      0xe6c
- .debug_info    0x0000000000000000      0xb6a src/Pegg-Timer.c.7.o
- .debug_info    0x0000000000000b6a      0x302 appinfo.auto.c.7.o
+.debug_info     0x0000000000000000      0xea2
+ .debug_info    0x0000000000000000      0xba0 src/Pegg-Timer.c.7.o
+ .debug_info    0x0000000000000ba0      0x302 appinfo.auto.c.7.o
 
 .debug_abbrev   0x0000000000000000      0x3c8
  .debug_abbrev  0x0000000000000000      0x32a src/Pegg-Timer.c.7.o
@@ -897,10 +898,10 @@ OUTPUT(/Users/erikrisinger/Dropbox/Coding/Pebble/Pegg-Timer/build/pebble-app.elf
  .debug_line    0x0000000000000000      0x28a src/Pegg-Timer.c.7.o
  .debug_line    0x000000000000028a      0x12a appinfo.auto.c.7.o
 
-.debug_str      0x0000000000000000      0x6fe
- .debug_str     0x0000000000000000      0x56e src/Pegg-Timer.c.7.o
-                                        0x606 (size before relaxing)
- .debug_str     0x000000000000056e      0x190 appinfo.auto.c.7.o
+.debug_str      0x0000000000000000      0x726
+ .debug_str     0x0000000000000000      0x59f src/Pegg-Timer.c.7.o
+                                        0x637 (size before relaxing)
+ .debug_str     0x000000000000059f      0x187 appinfo.auto.c.7.o
                                         0x280 (size before relaxing)
 
 .debug_frame    0x0000000000000000       0xfc
