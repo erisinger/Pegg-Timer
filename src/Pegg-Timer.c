@@ -91,14 +91,14 @@ static void select_click_handler(ClickRecognizerRef recognizer, void *context) {
 }
 
 static void up_click_handler(ClickRecognizerRef recognizer, void *context) {
-	if (remaining < 99 * 60 * 1000 + 59 * 1000) {
+	if (remaining < 99 * 60 * 1000) {
 		add_time(1000 * 60);
 	}
 	display_time();
 }
 
 static void down_click_handler(ClickRecognizerRef recognizer, void *context) {
-	if (remaining > 500 * 60) {
+	if (remaining >= 500 * 60) {
 		add_time(-500 * 60);
 	}
 	
