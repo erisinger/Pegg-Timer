@@ -4,7 +4,7 @@
   "longName": "Egg Timer",
   "companyName": "MakeAwesomeHappen",
   "versionCode": 1,
-  "versionLabel": "1.11",
+  "versionLabel": "1.12",
   "watchapp": {
     "watchface": false
   },

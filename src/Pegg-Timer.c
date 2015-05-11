@@ -87,7 +87,9 @@ static void vibrate(){
 
 static void select_click_handler(ClickRecognizerRef recognizer, void *context) {
 	//start/pause the timer
-	start_stop_timer();
+	if (remaining > 0) {
+		start_stop_timer();
+	}
 }
 
 static void up_click_handler(ClickRecognizerRef recognizer, void *context) {
